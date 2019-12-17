@@ -1,0 +1,13 @@
+<!--pages/userCenter/userCenter.wxml-->
+<view>
+  <view class="userTopView">
+  
+  
+  </view>
+  <view class="userBottomView">
+  
+  
+  </view>
+
+
+</view>

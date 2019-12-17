@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="inputContainer">
+    <textarea class="inputView" placeholder="请输入发布内容" auto-height="false" bindinput="textInputListen" bindblur="bindTextAreaBlur"></textarea>
+    <view class="line"></view>
+  </view>
+  <view class="photoContainer">
+    <view class="photoItem" catchtap="selectPhoto">
+
+      <image wx:if="{{selectedPhoto}}" src="{{selectedPhoto}}" class="selectedPhoto" mode="aspectFill"> </image>
+      <image class="selectPhotoIcon" wx:else src="/images/home/selectPhoto.png"></image>
+      <image class="canclePhoto" hidden="{{!selectedPhoto}}" src="/images/home/guanbi.png" catchtap="cancleSelectPhoto"> </image>
+    </view>
+  </view>
+  <view class="postTap" catchtap="postNewDynamic" style="position:absolute ,backgroundColor: red ,width:{{width - 200}}rpx,height:100rpx,top:{{height - 100}}rpx,left : {{20}}rpx">发布
+    
+  </view>
+</view>

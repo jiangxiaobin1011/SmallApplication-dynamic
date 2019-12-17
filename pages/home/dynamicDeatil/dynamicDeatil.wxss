@@ -1,0 +1,63 @@
+/* pages/home/dynamicDeatil/dynamicDeatil.wxss */
+
+@import '/templates/dynamicTemplate/dynamic-template.wxss';
+@import '/templates/commentTemplate/comment-template.wxss';
+
+page{
+  height: 100%;
+  width: 100%;
+}
+
+
+.innerContainer{
+  margin: 0 30rpx 200rpx 30rpx;
+  height: 100%;
+}
+
+
+.contentImg {
+  margin-top: 20rpx;
+  width: 690rpx;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+  background-color: lightgray;
+}
+
+.commentHeader{
+  margin: 10rpx 0rpx 40rpx 0rpx;
+}
+
+.commentPostView{
+  position: fixed;
+  bottom: 0rpx;
+  height: 100rpx;
+  width: 780rpx;
+  left: -30rpx;
+}
+
+.line1{
+   height: 2rpx;
+  background-color:#f0f0f0;
+  margin:0rpx 0rpx 0rpx 0rpx;
+}
+
+.commentPostContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inputView{
+  line-height: 100rpx;
+  height: 100rpx;
+  margin-left: 60rpx;
+  font-size: 28rpx;
+  width: 500rpx;
+
+}
+
+.postBtn{
+  line-height: 100rpx;
+  margin-right: 30rpx;
+  font-size: 28rpx;
+}

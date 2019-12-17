@@ -1,0 +1,38 @@
+.commentContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.commentTopView {
+  display: flex;
+  flex-direction: row;
+}
+
+.commentUserAvatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  vertical-align: middle;
+  background-color: lightgray;
+}
+
+.comment-userNick-postDate {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.commentUserNick {
+  font-size: 24rpx;
+  color: #333;
+}
+
+
+.commentContentText {
+  font-size: 24rpx;
+  color: #555;
+  margin-top: 10rpx;
+  margin-left: 90rpx;
+}  

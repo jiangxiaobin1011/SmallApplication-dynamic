@@ -1,0 +1,86 @@
+
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 0rpx 0rpx 0rpx ;
+}
+
+
+.inputContainer {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.inputView {
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+
+
+.line {
+  width: 690rpx;
+  height: 1rpx;
+  margin-left: 30rpx;
+  background-color: lightgray;
+  margin-top: 20rpx;
+}
+
+.photoContainer {
+  width: 100%;
+  margin-top: 60rpx;
+}
+
+.photoItem {
+  width: 150rpx;
+  height: 150rpx;
+  border: 1rpx solid lightgray;
+  margin-left: 30rpx;
+  
+}
+
+.selectedPhoto{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.selectPhotoIcon{
+  width: 80rpx;
+  height: 80rpx;
+  position: relative;
+  top: 35rpx;
+  left: 35rpx;
+}
+
+.canclePhoto{
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  left: 130rpx;
+  top: -180rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+
+.postTap{
+  position:fixed; 
+  bottom:60rpx; 
+  background-color:#50c4e7;
+  width: 700rpx;
+  height: 90rpx;
+  border-radius: 6rpx;
+  
+  font-size: 30rpx;
+  color: white;
+  line-height: 90rpx;
+  text-align: center;
+
+}
+
+

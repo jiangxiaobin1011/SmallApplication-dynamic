@@ -1,0 +1,23 @@
+<import src="../../../templates/dynamicTemplate/dynamic-template" />
+
+<import src="../../../templates/commentTemplate/comment-template" />
+
+
+<view class="innerContainer">
+  <template is="dynamicTemplate" data="{{...dynamicDetailData}}"></template>
+
+  <view class="commentHeader" hidden="{{commentList.length == 0}}">精彩评论</view>
+  <block wx:for="{{commentList}}" wx:for-item="comment">
+    <template is="commentTemplate" data="{{...comment}}"></template>
+  </block>
+
+  <view class="commentPostView">
+    <view class="line1"></view>
+    <view class="commentPostContainer">
+      <input class="inputView" placeholder="输入评论内容" confirm-type="done" bindblur="bindTextAreaBlur" value="{{commentText}}"></input>
+      <view catchtap="submitComment" class="postBtn">发送</view>
+    </view>
+  </view>
+
+
+</view>

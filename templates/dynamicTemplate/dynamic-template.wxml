@@ -1,0 +1,29 @@
+<template name="dynamicTemplate">
+  <view class="dynamicContainer" catchtap="dynamicTap" data-dynamicid="{{_id}}">
+    <view class="dynamicTopView">
+
+      <image class="userAvatar" catchtap="userAvatarTap" data-userid="{{user_id}}" src="{{avatar}}" mode="aspectFill"></image>
+      <view class="userNick-postDate">
+        <text class="userNick" bindtap="sss">{{nick_name}}</text>
+        <text class="postDate">{{postDate}}</text>
+      </view>
+      <image src="/images/home/moreIcon.png" class="moreIcon" catchtap="moreTap" data-userid="{{user_id}}"></image>
+
+    </view>
+    <text class="contentText">{{text}}</text>
+    <image class="contentImg"  catchtap="lookUpPhoto" data-photourl="{{url}}" mode="{{isDetail?'widthFix':'aspectFill'}}" src="{{url}}"></image>
+    <view class="dynamicBottomView">
+
+     <image class="favoriteIcon" src="{{is_up?'/images/home/love.png' :'/images/home/xin.png'}}" catchtap="upUserTap" data-dynamicid-isuped="{{ {dynamicid:_id ,isuped: is_up} }}" mode="{{is_up? 'scaleToFill':'aspectFit'  }}   "  ></image>
+
+     
+
+      <text class="favoriteCount">{{up_count}}</text>
+      <image class="commentIcon" src="/images/home/pinglun.png"></image>
+      <text class="commentCount">{{comment_count}}</text>
+    </view>
+    <view class="bottomLine"></view>
+
+
+  </view>
+</template>

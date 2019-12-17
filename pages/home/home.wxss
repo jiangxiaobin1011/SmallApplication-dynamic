@@ -1,0 +1,28 @@
+@import '/templates/dynamicTemplate/dynamic-template.wxss';
+
+.innerContainer {
+  margin: 0 30rpx 20rpx 30rpx;
+  height: 1200rpx;
+
+}
+
+.addNewDynamicBtn {
+  position: fixed;
+  bottom: 40rpx;
+  left: 610rpx;
+  background-color: #50c4e7;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.addIcon{
+  width: 70rpx;
+  height: 70rpx;
+  /* border-radius: 30rpx; */
+  /* position: relative; */
+  /* background-color: red; */
+  margin-left: 15rpx;
+  margin-top: 15rpx;
+
+}

@@ -1,0 +1,16 @@
+<import src='/templates/dynamicTemplate/dynamic-template.wxml' />
+
+<view>
+  <scroll-view class="innerContainer" scroll-x = "flase" scroll-y = "true" bindscrolltolower = "onScrollToLower"> 
+    <block wx:for = "{{dynamicList}}" wx:for-item  = "dynamic">
+      <template is="dynamicTemplate" data="{{...dynamic}}"></template>
+    </block>
+  </scroll-view>
+  <view>
+    <view class="addNewDynamicBtn" catchtap="addNewDynamic">
+      <image class="addIcon" src="/images/home/fabu.png"></image>
+    </view>
+  </view>
+
+
+</view>

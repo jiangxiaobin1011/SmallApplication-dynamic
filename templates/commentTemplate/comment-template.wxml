@@ -1,0 +1,15 @@
+<template name="commentTemplate">
+  <view class="commentContainer">
+     <view class="commentTopView">
+
+      <image class="commentUserAvatar"  src="{{avatar}}" mode="aspectFill"></image>
+      <view class="comment-userNick-postDate">
+        <text class="commentUserNick" bindtap="sss">{{nick_name}}</text>
+        <text class="postDate">{{postDate}}</text>
+      </view>
+
+    </view>
+    <text class="commentContentText">{{text}}</text>
+    <view class="bottomLine"></view>
+  </view>
+</template>
